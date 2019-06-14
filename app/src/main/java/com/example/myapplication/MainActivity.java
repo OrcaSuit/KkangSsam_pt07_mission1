@@ -1,8 +1,25 @@
+package com.example.myapplication;
 
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+    }
+}
+
+
+
+/*
 package com.example.myapplication;
 
 
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -29,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Context context;
 
         ReservationMachine rm = new ReservationMachine();
         EnableRM erm = new EnableRM(rm);
@@ -38,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switchView = findViewById(R.id.mission1_switch);
 
-        pref = getSharedPreferences(PREFERENCE,MODE_PRIVATE);
+        pref = getSharedPreferences(Context,MODE_PRIVATE);
         mEditor = pref.edit();
 
         //erm = switchView.isChecked();
@@ -81,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mEditor.putBoolean(Enable,switchView.isChecked());
 
     }
-}
+}*/
 
 /*
 
