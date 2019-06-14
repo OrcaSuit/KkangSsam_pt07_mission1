@@ -1,3 +1,4 @@
+/*
 package com.example.myapplication;
 
 import java.util.ArrayList;
@@ -53,3 +54,4 @@ public class ReservationMachine implements PreferenceTask {
         return enable;
     }
 }
+*/

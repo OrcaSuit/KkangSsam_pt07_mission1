@@ -1,3 +1,4 @@
+/*
 package com.example.myapplication;
 
 public interface PreferenceTask {
@@ -5,3 +6,4 @@ public interface PreferenceTask {
     public void delete(Observer observer);
     public void notifyObserver();
 }
+*/

@@ -1,14 +1,35 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Switch;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    FloatingActionButton fab;
+    TextView timeTextView;
+    Switch switchView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        fab = findViewById(R.id.mission1_fab);
+        switchView = findViewById(R.id.mission1_switch);
+        timeTextView = findViewById(R.id.mission1_time);
+
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v==fab){
+
+        }
     }
 }
 
